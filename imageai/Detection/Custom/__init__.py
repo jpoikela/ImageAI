@@ -166,11 +166,11 @@ class DetectionModelTrainer:
         :return:
         """
 
+        self.__model_labels = sorted(object_names_array)
         self.__model_anchors, self.__inference_anchors = generateAnchors(self.__train_annotations_folder,
                                                                          self.__train_images_folder,
                                                                          self.__train_cache_file, self.__model_labels)
 
-        self.__model_labels = sorted(object_names_array)
         self.__num_objects = len(object_names_array)
 
         self.__train_batch_size = batch_size
