@@ -1,8 +1,8 @@
-tensorflow
-keras
+tensorflow~=2.4
+keras~=2.4
 numpy
 pillow
 scipy
 h5py
 matplotlib
-opencv-python
+opencv-python~=4.4
